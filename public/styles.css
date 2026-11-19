@@ -499,3 +499,35 @@ img{max-width:100%}
 #toastText{scroll-margin-top:0;--bq-anchor:1}
 #simScanBtn{scroll-margin-top:0;--bq-anchor:1}
 #privacyBtn{scroll-margin-top:0;--bq-anchor:1}
+
+/* BUQSH registration CTA refinement — preserves the existing button and click handler */
+#ftuRegBtn{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  min-height:54px;
+  padding:14px 18px;
+  margin-top:10px;
+  border:1.5px solid rgba(12,74,64,.24);
+  border-radius:16px;
+  background:linear-gradient(135deg,#FFFFFF 0%,#F5F9F6 100%);
+  color:var(--brand);
+  font-size:15px;
+  font-weight:800;
+  letter-spacing:0;
+  box-shadow:0 7px 18px rgba(12,74,64,.07),inset 0 1px 0 rgba(255,255,255,.9);
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease,background .18s ease;
+}
+#ftuRegBtn i{width:19px;height:19px;flex:0 0 auto;stroke-width:2.2}
+#ftuRegBtn span{line-height:1.4}
+#ftuRegBtn:hover{
+  border-color:rgba(12,74,64,.48);
+  background:linear-gradient(135deg,#FFFFFF 0%,#EEF5F1 100%);
+  box-shadow:0 10px 22px rgba(12,74,64,.12);
+  transform:translateY(-1px);
+}
+#ftuRegBtn:active{transform:translateY(0);box-shadow:0 4px 12px rgba(12,74,64,.09)}
+#ftuRegBtn:focus-visible{outline:3px solid rgba(212,225,87,.8);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){#ftuRegBtn{transition:none}#ftuRegBtn:hover{transform:none}}
